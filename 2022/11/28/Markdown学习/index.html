@@ -182,6 +182,17 @@
         <span class="mobile">2022-11-28 20:30</span>
     </span>
     
+        <span class="article-categories article-meta-item">
+            <i class="fa-duotone fa-folder-open"></i></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/markdown/">markdown</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
     
         <span class="article-tags article-meta-item">
             <i class="fa-duotone fa-tags"></i></i>&nbsp;
@@ -212,10 +223,8 @@
 
         <div class="article-content markdown-body">
             <h2 id="Markdown笔记"><a href="#Markdown笔记" class="headerlink" title="Markdown笔记"></a>Markdown笔记</h2><h1 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1.斜体和粗体"></a><strong>1.斜体和粗体</strong></h1><ol>
-<li><code>*斜体*或_斜体_</code>    <em>斜体</em>   </li>
-<li><code>**粗体**</code>   		<strong>粗体</strong> </li>
-<li><code>***加粗斜体*** </code>  <em><strong>加粗斜体</strong></em></li>
-<li><code>~~删除线~~ </code>  	<del>删除线</del></li>
+<li><code>*斜体*或_斜体_</code>    <em>斜体</em><br> . <code>**粗体**</code>   		<strong>粗体</strong> </li>
+<li><code>***加粗斜体*** </code>  <em><strong>加粗斜体</strong></em><br> . <code>~~删除线~~ </code>  	<del>删除线</del></li>
 </ol>
 <h1 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2.分级标题"></a><strong>2.分级标题</strong></h1><ol>
 <li><h1 id="一级标题-一级标题"><a href="#一级标题-一级标题" class="headerlink" title="一级标题	# 一级标题"></a>一级标题	<code># 一级标题</code></h1></li>
@@ -225,9 +234,22 @@
 <li><h5 id="五级标题-五级标题"><a href="#五级标题-五级标题" class="headerlink" title="五级标题    #####五级标题"></a>五级标题    <code>#####五级标题</code></h5></li>
 <li><h6 id="六级标题-六级标题"><a href="#六级标题-六级标题" class="headerlink" title="六级标题     ######六级标题"></a>六级标题     <code>######六级标题</code></h6></li>
 </ol>
-<h1 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3.超链接"></a><strong>3.超链接</strong></h1><ul>
-<li>[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。[链接文字](链接地址 “链接标题”)’这样的形式。链接地址与链接标题前有一个空格。</li>
-</ul>
+<h1 id="3-超链接"><a href="#3-超链接" class="headerlink" title="3.超链接"></a><strong>3.超链接</strong></h1><p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。 </p>
+<h3 id="3-1-行内式"><a href="#3-1-行内式" class="headerlink" title="3.1. 行内式"></a>3.1. 行内式</h3><p>[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。链接文字’这样的形式。链接地址与链接标题前有一个空格。</p>
+<p><code>欢迎来到[梵居闹市](http://blog.leanote.com/freewalk)</code></p>
+<p>欢迎来到<a class="link" target="_blank" rel="noopener" href="http://blog.leanote.com/freewalk">梵居闹市<i class="fas fa-external-link-alt"></i></a> </p>
+<p><code>欢迎来到[梵居闹市](http://blog.leanote.com/freewalk &quot;梵居闹市&quot;)</code> </p>
+<p>欢迎来到<a class="link" target="_blank" rel="noopener" href="http://blog.leanote.com/freewalk" title="梵居闹市">梵居闹市<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="3-2-参考式"><a href="#3-2-参考式" class="headerlink" title="3.2. 参考式"></a>3.2. 参考式</h3><p>参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。</p>
+<p>语法说明：<br>参考式链接分为两部分，文中的写法<code> [链接文字][链接标记]</code>，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。</p>
+<p>如果链接文字本身可以做为链接标记，你也可以写成<code>[链接文字][] </code><br>[链接文字]：链接地址的形式，见代码的最后一行。</p>
+<p><code>我经常去的几个网站[Google][1]、[Leanote][2]以及[自己的博客][3] </code></p>
+<p>我经常去的几个网站<a class="link" target="_blank" rel="noopener" href="http://www.google.com/" title="Google">Google<i class="fas fa-external-link-alt"></i></a>、<a class="link" target="_blank" rel="noopener" href="http://www.leanote.com/" title="Leanote">Leanote<i class="fas fa-external-link-alt"></i></a>以及<a class="link" target="_blank" rel="noopener" href="http://http//blog.leanote.com/freewalk" title="梵居闹市">自己的博客<i class="fas fa-external-link-alt"></i></a> </p>
+<p><code>[Leanote 笔记][2]是一个不错的[网站][]。 </code></p>
+<p><a class="link" target="_blank" rel="noopener" href="http://www.leanote.com/" title="Leanote">Leanote 笔记<i class="fas fa-external-link-alt"></i></a>是一个不错的<a class="link" target="_blank" rel="noopener" href="http://http//blog.leanote.com/freewalk">网站<i class="fas fa-external-link-alt"></i></a>。 </p>
+<h3 id="3-3-自动链接"><a href="#3-3-自动链接" class="headerlink" title="3.3. 自动链接"></a>3.3. 自动链接</h3><p><code>&lt;http://example.com/&gt; &lt;address@example.com&gt; </code></p>
+<p><a href="http://example.com/">http://example.com/</a></p>
+<p><a class="link" href="mailto:&#x61;&#100;&#x64;&#114;&#x65;&#115;&#x73;&#64;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#109;">&#x61;&#100;&#x64;&#114;&#x65;&#115;&#x73;&#64;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#109;<i class="fas fa-external-link-alt"></i></a></p>
 
         </div>
 
@@ -263,14 +285,29 @@
         
             <div class="article-nav">
                 
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/11/28/Flink%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Flink基础入门</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/11/28/Flink%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/"
+                           href="/2022/11/28/Flink%E6%B5%81%E6%89%B9%E4%B8%80%E4%BD%93%E5%8C%96API/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Flink基础入门</span>
+                                <span class="post-nav-title-item">Flink流批一体化API</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -395,7 +432,7 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list-tree"></i> <strong>Contents</strong></div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown%E7%AC%94%E8%AE%B0"><span class="nav-text">Markdown笔记</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E6%96%9C%E4%BD%93%E5%92%8C%E7%B2%97%E4%BD%93"><span class="nav-text">1.斜体和粗体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%88%86%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">2.分级标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98-%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">一级标题	# 一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98-%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">二级标题    ##二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98-%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">三级标题     ###三级标题 </span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98-%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">四级标题    ####四级标题  </span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98-%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">五级标题    #####五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98-%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">六级标题     ######六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-text">3.超链接</span></a>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown%E7%AC%94%E8%AE%B0"><span class="nav-text">Markdown笔记</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E6%96%9C%E4%BD%93%E5%92%8C%E7%B2%97%E4%BD%93"><span class="nav-text">1.斜体和粗体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%88%86%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">2.分级标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98-%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">一级标题	# 一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98-%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">二级标题    ##二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98-%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">三级标题     ###三级标题 </span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98-%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">四级标题    ####四级标题  </span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98-%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">五级标题    #####五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98-%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">六级标题     ######六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-text">3.超链接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E8%A1%8C%E5%86%85%E5%BC%8F"><span class="nav-text">3.1. 行内式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%8F%82%E8%80%83%E5%BC%8F"><span class="nav-text">3.2. 参考式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5"><span class="nav-text">3.3. 自动链接</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
