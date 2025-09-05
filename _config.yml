@@ -4,7 +4,7 @@
 
 # Site (站点设置)
 # 网站标题
-title: Hexo
+title: DON'T SAY "LAZY"
 # 网站副标题
 subtitle: ''
 # 网站描述
@@ -12,7 +12,7 @@ description: ''
 # 网站关键词
 keywords:
 # 作者名字
-author: John Doe
+author: 小白
 # 网站语言
 language: zh-CN
 # 网站时区
@@ -20,7 +20,7 @@ timezone: ''
 
 # URL (链接设置)
 ## 设置网站链接，例如使用GitHub Page时设置为 https://用户名.github.io/项目名
-url: http://example.com
+url: https://caoxiaobai1.github.io
 # 文章链接的永久链接格式
 permalink: :year/:month/:day/:title/
 # 永久链接的默认属性
@@ -144,7 +144,10 @@ theme: reimu
 ## Docs: https://hexo.io/docs/one-command-deployment
 # 部署设置
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/Caoxiaobai1/Caoxiaobai1.github.io
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: master
 
 # Feed插件设置
 feed:
