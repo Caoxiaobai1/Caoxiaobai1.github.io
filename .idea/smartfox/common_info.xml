@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SmartFoxWorkToolsProjectState">
-    <option name="branch" value="hexo" />
+    <option name="branch" value="reimu" />
     <option name="gitUrl" value="https://github.com/Caoxiaobai1/Caoxiaobai1.github.io.git" />
-    <option name="localBranch" value="hexo" />
-    <option name="revision" value="f9406fea2e75dc003f5f112ae8c795c15c79fda7" />
+    <option name="localBranch" value="reimu" />
+    <option name="revision" value="62e636812498432095f13878635e793d2cd5ae8c" />
   </component>
 </project>
