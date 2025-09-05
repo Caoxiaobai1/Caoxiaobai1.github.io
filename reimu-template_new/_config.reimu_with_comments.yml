@@ -1,0 +1,882 @@
+########################################
+# 基本配置
+########################################
+# 主题版本检查
+theme_version_check: true
+# 主题配置检查
+theme_config_check: true
+
+# 主菜单导航
+# 更多图标信息，请访问 https://github.com/D-Sketon/hexo-theme-reimu/issues/30
+menu:
+  - name: home
+    url: /
+    icon: # 默认使用太极图标，您可以使用fontawesome或icon_font的十六进制表示，如'f0c1'
+  - name: archives
+    url: /archives
+    icon:
+  - name: about
+    url: /about
+    icon:
+  - name: friend
+    url: /friend
+    icon:
+
+# 横幅图片设置
+banner: "/images/banner.webp" # 表示 themes/reimu/source/images/banner.webp
+# 您也可以写成以下url形式
+# banner: "https://example.com"
+
+# 如果您想使用srcset属性，请启用它
+banner_srcset:
+  # 是否启用横幅图片的响应式设置
+  enable: false
+  # 响应式图片设置
+  srcset:
+    - src: "/images/banner-600w.webp"
+      media: "(max-width: 479px)"
+    - src: "/images/banner-800w.webp"
+      media: "(max-width: 799px)"
+    - src: "/images/banner.webp"
+      media: "(min-width: 800px)"
+
+# 网站图标设置
+favicon: "/images/favicon.ico" # 表示 themes/reimu/source/images/favicon.ico
+# 您也可以写成以下url形式
+# favicon: "https://example.com"
+
+# 用户头像设置
+avatar: "avatar.webp" # 表示 source/_data/avatar/avatar.webp
+
+# 控制文章封面的显示
+# 如果未设置，默认显示横幅图片
+# 其优先级低于Front-matter中的封面
+cover: # https://example.com / false / rgb(255,117,117)
+
+# 控制文章目录的显示
+# 其优先级低于Front-matter中的目录
+toc: true
+# 目录显示选项
+toc_options:
+  # 是否显示序号
+  list_number: true
+  # 最小目录层级
+  min_depth: 1
+  # 最大目录层级
+  max_depth: 6
+
+# Open Graph设置（用于SEO和社交媒体分享）
+# 参见 https://hexo.io/docs/helpers#open-graph
+open_graph:
+  # 是否启用Open Graph
+  enable: true
+  options:
+    #twitter_card: <twitter:card>
+    #twitter_id: <twitter:creator>
+    #twitter_site: <twitter:site>
+    #twitter_image: <twitter:image>
+    #google_plus: <g+:profile_link>
+    #fb_admins: <fb:admin_id>
+    #fb_app_id: <fb:app_id>
+    # Open Graph的默认图片
+    default_og_image: /images/banner.webp # Open Graph的默认og:image，支持绝对路径
+
+# 内容设置
+excerpt_link: Read More
+
+# RSS设置
+# 需要 https://github.com/hexojs/hexo-generator-feed
+rss: atom.xml
+
+# 注入器设置（用于在页面特定位置插入代码）
+# https://hexo.io/api/injector的一个非常简单的替代方案
+injector:
+  head_begin: # 在<head>之后插入代码片段
+  head_end: # 在</head>之前插入代码片段
+  body_begin: # 在<body>之后插入代码片段
+  body_end: # 在</body>之前插入代码片段
+  sidebar_begin: # 在<aside>之后插入代码片段
+  sidebar_end: # 在</aside>之前插入代码片段
+
+# 页脚版权
+copyright: # 在页脚版权中插入代码片段
+# 需要帮助选择？请参见...
+# https://creativecommons.org/choose/
+# https://choosealicense.com/
+# copyright: |-
+#   <div style="flex-direction:column;align-items: center;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+#   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+
+# 页脚设置
+footer:
+  since: 2020 # 网站起始年份，会显示为 2020-当前年份
+  powered: true # 是否显示"由 Hexo 强力驱动"
+  count: true # 是否显示字数统计和阅读时间
+  busuanzi: true # 是否启用不蒜子统计（显示访问量）
+  icon:
+    url: "../images/taichi.png" # 图标URL，此路径相对于css/style.css，因此需要向上一级以到达images文件夹
+    rotate: true # 是否旋转图标
+    mask: true # 是否将图片用作遮罩
+
+# 侧边栏设置
+sidebar: right # 侧边栏位置，可以是 left 或 right
+
+# 社交链接设置
+social:
+  # email: mailto:xxx@gmail.com
+  # github: https://github.com/yourname
+  # google: https://plus.google.com/yourname
+  # twitter: https://twitter.com/yourname
+  # facebook: https://www.facebook.com/yourname
+  # instagram: https://www.instagram.com/yourname
+  # linkedin: https://www.linkedin.com/in/yourname
+  # pinterest: https://www.pinterest.com/yourname
+  # youtube: https://www.youtube.com/channel/yourname
+  # vimeo: https://vimeo.com/yourname
+  # flickr: https://www.flickr.com/photos/yourname
+  # dribbble: https://dribbble.com/yourname
+  # behance: https://www.behance.net/yourname
+  # bilibili: https://space.bilibili.com/yourname
+  # weibo: https://weibo.com/yourname
+  # zhihu: https://www.zhihu.com/people/yourname
+  # reddit: https://www.reddit.com/user/yourname
+  # tumblr: https://yourname.tumblr.com
+  # medium: https://medium.com/@yourname
+  # deviantart: https://yourname.deviantart.com
+  # stackoverflow: https://stackoverflow.com/users/yourname
+  # keybase: https://keybase.io/yourname
+  # telegram: https://t.me/yourname
+  # discord: https://discordapp.com/users/yourname
+  # steam: https://steamcommunity.com/id/yourname
+
+# 侧边栏小工具设置
+widgets:
+  # - category
+  # - tag
+  # - tagcloud
+  # - archive
+  # - recent_posts
+
+# 小工具行为设置
+archive_type: "monthly" # 归档类型，可以是 monthly 或 yearly
+show_count: false # 是否显示分类和标签的数量
+tag_limits: # 标签云标签数量限制
+recent_posts_limits: 5 # 最新文章数量限制
+tagcloud_limits: # 标签云标签数量限制
+
+# 归档行为设置
+only_show_capsule_in_index: false # 如果您有大量的标签和分类，可以将其设置为true以仅在首页显示胶囊以获得更好的性能
+
+# 是否显示文章更新时间
+show_update_time: false # 如果您想显示更新时间，请将其设置为true
+
+# 国际化设置
+i18n:
+  enable: true # 是否启用国际化
+  type: [page, post] # 启用国际化的页面类型
+  generator: [archive, category, tag, index] # 启用国际化的生成器
+  languages: [zh-CN, en] # 支持的语言列表
+
+########################################
+# CSS设置
+########################################
+
+# 锚点图标设置
+anchor_icon: # 默认使用'#'图标，您可以使用fontawesome或icon_font的十六进制表示，如'f0c1'，或者您可以使用false隐藏锚点图标
+
+# Reimu光标设置
+reimu_cursor:
+  enable: true # 是否启用自定义光标
+  cursor:
+    default: ../images/cursor/reimu-cursor-default.png # 默认光标图片，此路径相对于css/style.css，因此需要向上一级以到达images文件夹
+    pointer: ../images/cursor/reimu-cursor-pointer.png # 指针光标图片
+    text: ../images/cursor/reimu-cursor-text.png # 文本光标图片
+
+# 图标字体设置
+# 设置为false以启用fontawesome
+icon_font: 4552607_4k4bc36ef96
+
+# 字体加载策略
+# 自定义字体 -> Google字体 -> 本地备用字体
+
+# 自定义字体设置
+custom_font:
+  enable: true # 是否启用自定义字体
+  article: # 文章正文字体
+     - css: https://fontsapi.zeoseven.com/292/main/result.css
+       name: LXGW WenKai
+  code: # 代码字体
+
+# https://fonts.google.com/
+# Google字体设置，优先级高于local_font
+font:
+  enable: true # 是否启用Google字体
+  article: # 文章正文字体
+    - Mulish
+    - Noto Serif SC
+  code: # 代码字体
+    # - Ubuntu Mono
+    # - Source Code Pro
+    # - JetBrains Mono
+
+# 本地备用字体设置
+local_font:
+  article: # 文章正文字体
+    - "-apple-system"
+    - PingFang SC
+    - Microsoft YaHei
+    - sans-serif
+  code: # 代码字体
+    - Menlo
+    - Monaco
+    - Consolas
+    - monospace
+
+# 暗色模式设置
+dark_mode:
+  # true表示默认启用暗色模式
+  # false表示默认禁用暗色模式
+  # auto表示根据系统设置自动切换暗色模式
+  enable: auto # true | false | auto
+
+# Markdown渲染设置
+# 需要 https://github.com/D-Sketon/hexo-renderer-markdown-it-plus
+markdown:
+  container: false # 是否启用容器样式
+
+########################################
+# Markdown显示设置
+########################################
+
+# 需要 https://github.com/D-Sketon/hexo-renderer-markdown-it-plus
+math:
+  enable: true # 是否启用数学公式支持
+  # 如果您不想使用它，请将`autoRender`设置为true以启用浏览器渲染
+  katex:
+    enable: true # 是否启用KaTeX渲染
+    autoRender: false # 是否在浏览器中渲染数学公式，默认禁用
+  mathjax:
+    enable: false # 是否启用MathJax渲染
+    options: # 参见 https://docs.mathjax.org/en/latest/web/configuration.html
+      {
+        tex:
+          {
+            tags: "ams",
+            useLabelIds: true,
+            inlineMath: [["$", "$"], ['\\(', '\\)']],
+            displayMath: [["$$", "$$"], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            autoload: { color: [], colorv2: ["color"] },
+            packages: { "[+]": ["noerrors"] },
+          },
+        options:
+          {
+            skipHtmlTags:
+              ["script", "noscript", "style", "textarea", "pre", "code"],
+            ignoreHtmlClass: "tex2jax_ignore",
+            processHtmlClass: "tex2jax_process",
+          },
+        loader: { load: ["input/asciimath", "[tex]/noerrors"] },
+      }
+
+# Mermaid图表支持设置
+# mermaid链接 https://github.com/knsv/mermaid
+# 需要 https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+mermaid:
+  enable: true # 是否启用Mermaid图表支持
+
+# 代码块设置
+code_block:
+  # 代码块默认展开设置
+  # true表示默认展开所有代码块
+  # false表示默认折叠所有代码块
+  # 数字表示当代码行数超过指定值时默认折叠代码块
+  expand: true
+
+########################################
+# 分析设置
+########################################
+
+# 百度统计
+baidu_analytics: false
+# Google Analytics
+google_analytics: false
+# Microsoft Clarity
+clarity: false
+
+########################################
+# 评论系统设置
+########################################
+
+# 评论系统的全局控制
+# 您可以同时使用多个评论系统
+# 加载顺序: localStorage(用户手动选择) -> 默认
+# -> valine -> waline -> twikoo -> gitalk -> giscus
+comment:
+  # 评论系统标题
+  title:
+    en: Leave a comment
+    zh-CN: 说些什么吧！
+    zh-TW: 說些什麼吧！
+    ja: コメントを残す
+    pt-BR: Deixe um comentário
+  # 默认评论系统，当您启用多个评论系统时使用
+  default: waline # default comment system, when you enable multiple comment systems
+
+# Valine评论系统设置. https://valine.js.org
+# 版本 1.5.1
+# notify和verify已被弃用
+valine:
+  enable: false # 如果您想使用valine，请将此值设置为true
+  appId: # leancloud应用程序app id
+  appKey: # leancloud应用程序app key
+  pageSize: 10 # 评论列表页面大小
+  avatar: mp # gravatar样式 https://valine.js.org/#/avatar
+  # lang: zh-cn # 已弃用，请改用html.lang
+  placeholder: Just go go # valine评论输入占位符(例如: 请留下您的足迹 )
+  guest_info: nick,mail,link #valine评论头部信息
+  recordIP: true # 是否记录评论者的IP地址
+  highlight: true # 是否高亮代码块
+  visitor: false # 是否显示访客数量
+  serverURLs: # leancloud服务器url
+
+# Waline评论系统设置 https://waline.js.org/
+# 版本 2.15.8
+waline:
+  enable: false # 是否启用Waline评论系统
+  serverURL: # 服务端地址
+  # lang: zh-CN # 已弃用，请改用html.lang
+  locale: {} # 本地化设置，参见 https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
+  emoji: # 表情包设置
+    - https://unpkg.com/@waline/emojis@1.2.0/weibo
+    - https://unpkg.com/@waline/emojis@1.2.0/alus
+    - https://unpkg.com/@waline/emojis@1.2.0/bilibili
+    - https://unpkg.com/@waline/emojis@1.2.0/qq
+    - https://unpkg.com/@waline/emojis@1.2.0/tieba
+    - https://unpkg.com/@waline/emojis@1.2.0/tw-emoji
+  meta: # 评论元数据设置
+    - nick
+    - mail
+    - link
+  requiredMeta: # 必填元数据设置
+    - nick
+    - mail
+  wordLimit: 0 # 字数限制
+  pageSize: 10 # 每页评论数
+  pageview: true # 是否显示页面访问量
+
+# Twikoo评论系统设置 https://twikoo.js.org
+twikoo:
+  enable: false # 是否启用Twikoo评论系统
+  envId: # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  region: # 环境地域
+
+# Gitalk评论系统设置 https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+gitalk:
+  enable: false # 是否启用Gitalk评论系统
+  clientID: # GitHub Application Client ID
+  clientSecret: # GitHub Application Client Secret
+  repo: # GitHub repository
+  owner: # GitHub repository owner
+  admin: # GitHub repository owner and collaborators
+  md5: false # 是否对用户名和邮箱进行MD5加密
+
+# Giscus评论系统设置 https://giscus.app/zh-CN
+giscus:
+  enable: false # 是否启用Giscus评论系统
+  repo: # GitHub repository
+  repoId: # GitHub repository ID
+  category: # Discussion category
+  categoryId: # Discussion category ID
+  mapping: mapping # 页面与discussion的映射方式
+  strict: 0 # 是否严格匹配映射
+  reactionsEnabled: 1 # 是否启用反应
+  emitMetadata: 0 # 是否发送元数据
+  inputPosition: bottom # 输入框位置
+  # commentTheme: light # 已弃用，因为主题由主题本身设置
+  # lang: zh-CN # 已弃用，请改用html.lang
+
+########################################
+# 搜索设置
+########################################
+
+# Algolia搜索设置
+# 需要 https://github.com/D-Sketon/hexo-algoliasearch
+# 请在您的_config.yml中添加以下配置
+# algolia:
+#   appId: 'your applicationID'
+#   apiKey: 'your apiKey'
+#   adminApiKey: 'your adminApiKey'
+#   indexName: 'your indexName'
+#   chunkSize: 5000
+#   fields:
+#     - content:strip:truncate,0,500
+#     - excerpt:strip
+#     - gallery
+#     - permalink
+#     - photos
+#     - slug
+#     - tags
+#     - title
+algolia_search:
+  enable: false # 是否启用Algolia搜索
+  hits:
+    per_page: 10 # 每页搜索结果数
+
+# 生成器搜索设置
+generator_search:
+  enable: true # 是否启用生成器搜索
+  field: post # 搜索字段
+  content: true # 是否搜索内容
+
+########################################
+# 动画设置
+########################################
+
+# 加载动画设置
+preloader:
+  enable: true # 是否启用加载动画
+  text: # 加载文本
+    zh-CN: 少女祈祷中...
+    zh-TW: 少女祈禱中...
+    en: Loading...
+    ja: 少女祈祷中...
+    pt-BR: Carregando...
+  icon: # 加载图标，默认使用内联SVG以提高速度，您也可以使用图片URL，如'/images/taichi.png'
+  rotate: true # 是否旋转图标
+
+# 页面元素动画设置
+# 参见 https://github.com/D-Sketon/aos.js
+animation:
+  enable: true # 是否启用页面动画
+  options:
+    header: # 头部动画
+      title: slide-up # 标题动画效果
+      subTitle: slide-down # 副标题动画效果
+    home: # 首页动画
+      post: fade-up # 文章列表动画效果
+      widget: fade-up # 小工具动画效果
+      sidebar: fade-up # 侧边栏动画效果
+    article: # 文章页动画
+      whole: fade-up # 整体动画效果
+      date: zoom-in # 日期动画效果
+      category: zoom-in # 分类动画效果
+      tag: zoom-in # 标签动画效果
+      comment: zoom-in # 评论动画效果
+      reading: zoom-in # 阅读量动画效果
+      nav: fade-up # 导航动画效果
+    archive: # 归档页动画
+      whole: fade-up # 整体动画效果
+      tag: zoom-in # 标签动画效果
+      category: zoom-in # 分类动画效果
+      section: fade-up # 部分动画效果
+      nav: fade-up # 导航动画效果
+
+# 鼠标烟花效果设置
+# 参见 https://github.com/D-Sketon/mouse-firework
+firework:
+  enable: true # 是否启用鼠标烟花效果
+  options:
+    excludeElements: ["a", "button"] # 排除元素
+    particles: # 粒子效果设置
+      - shape: circle # 形状
+        move: ["emit"] # 运动方式
+        easing: easeOutExpo # 缓动效果
+        colors: ["var(--red-1)", "var(--red-2)", "var(--red-3)", "var(--red-4)"] # 颜色
+        number: 20 # 数量
+        duration: [1200, 1800] # 持续时间
+        shapeOptions: # 形状选项
+          radius: [16, 32] # 半径
+          alpha: [0.3, 0.5] # 透明度
+      - shape: circle # 形状
+        move: ["diffuse"] # 运动方式
+        easing: easeOutExpo # 缓动效果
+        colors: ["var(--red-0)"] # 颜色
+        number: 1 # 数量
+        duration: [1200, 1800] # 持续时间
+        shapeOptions: # 形状选项
+          radius: 20 # 半径
+          alpha: [0.2, 0.5] # 透明度
+          lineWidth: 6 # 线宽
+
+########################################
+# 扩展功能设置
+########################################
+
+# 剪贴板配置
+clipboard:
+  success: # 复制成功提示文本
+    en: Copy successfully (*^▽^*)
+    zh-CN: 复制成功 (*^▽^*)
+    zh-TW: 複製成功 (*^▽^*)
+    ja: コピー成功 (*^▽^*)
+    pt-BR: Copiado com sucesso (*^▽^*)
+  fail: # 复制失败提示文本
+    en: Copy failed (ﾟ⊿ﾟ)ﾂ
+    zh-CN: 复制失败 (ﾟ⊿ﾟ)ﾂ
+    zh-TW: 複製失敗 (ﾟ⊿ﾟ)ﾂ
+    ja: コピー失敗 (ﾟ⊿ﾟ)ﾂ
+    pt-BR: Falha ao copiar (ﾟ⊿ﾟ)ﾂ
+  copyright: # 是否为剪贴的内容添加版权信息
+    enable: false # 是否启用版权信息
+    count: 50 # 显示版权声明的字符数阈值
+    license_type: by-nc-sa # 知识共享许可证类型 https://creativecommons.org/licenses
+
+# 首页分类卡片设置
+home_categories:
+  enable: true # 是否在首页显示分类卡片
+  content:
+    - categories: test # 分类名称，字符串(单层分类)或数组(多层分类)
+      cover: # 分类封面，留空表示随机封面
+    - categories:
+      cover:
+
+# 文章过时提醒设置
+outdate:
+  enable: false # 是否启用文章过时提醒
+  daysAgo: 180 # 文章被认为过时的天数
+  message: # 过时提醒消息
+    en: This article was last updated on {time}. 请注意文中内容可能已不适用。
+    zh-CN: 本文最后更新于 {time}，请注意文中内容可能已不适用。
+    zh-TW: 本文最後更新於 {time}，請注意文中內容可能已不適用。
+    ja: この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。
+    pt-BR: Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável。
+
+# 赞赏功能设置
+sponsor:
+  enable: false # 是否启用赞赏功能
+  tip: # 赞赏提示文本
+    zh-CN: 请作者喝杯咖啡吧
+    zh-TW: 請作者喝杯咖啡吧
+    en: Buy me a coffee
+    ja: コーヒーを買ってください
+    pt-BR: Compre-me um café
+  icon: # 赞赏图标设置
+    url: "../images/taichi.png" # 图标URL，此路径相对于css/style.css，因此需要向上一级以到达images文件夹
+    rotate: true # 是否旋转图标
+    mask: true # 是否将图片用作遮罩
+  qr: # 二维码设置
+    # - name: 支付宝
+    #   src: "/sponsor/alipay.jpg"
+    # - name: 微信
+    #   src: "/sponsor/wechat.png"
+
+# ICP备案设置
+icp:
+  icpnumber: # ICP备案号
+  beian: # 网安备案号
+  recordcode: # 网安备案链接中的recordcode参数
+
+# 萌国ICP备案设置
+moe_icp:
+  icpnumber: # 萌国ICP备案号
+
+# 文章版权信息设置
+# show the copyright below each article
+article_copyright:
+  enable: false # 是否显示文章版权信息
+  content:
+    author: true # 是否显示作者
+    link: true # 是否显示链接
+    title: false # 是否显示标题
+    date: false # 是否显示发布日期
+    updated: false # 是否显示更新日期
+    license: true # 是否显示许可证
+    license_type: by-nc-sa # 知识共享许可证类型 https://creativecommons.org/licenses
+
+# 返回顶部设置
+top:
+  enable: true # 是否启用返回顶部功能
+  position: right # 按钮位置，left 或 right
+  icon: # 返回顶部图标设置
+    url: "../images/taichi.png" # 图标URL，此路径相对于css/style.css，因此需要向上一级以到达images文件夹
+    rotate: true # 是否旋转图标
+    mask: true # 是否将图片用作遮罩
+
+# 分享功能设置
+share:
+  # - facebook
+  # - twitter
+  # - linkedin
+  # - reddit
+  # - weibo
+  # - qq
+  # - weixin
+
+########################################
+# 实验性功能设置
+########################################
+
+# 实验性功能，可能有很多bug，请谨慎开启！
+pjax:
+  enable: true # 是否启用PJAX无刷新加载
+
+# Quicklink预加载设置
+# 实验性功能
+# https://github.com/GoogleChromeLabs/quicklink
+quicklink:
+  enable: true # 是否启用Quicklink预加载
+  timeout: 3000 # requestIdleCallback超时时间，以毫秒为单位
+  priority: true # URL是否应被视为高优先级，当为true时，quicklink将尝试使用fetch() API（如果支持）
+  ignores: [] # 确定哪些URL应该被预加载，仅支持字符串
+
+# Pace进度条设置
+# https://github.com/CodeByZach/pace
+pace:
+  enable: true # 是否启用Pace加载进度条
+
+# Service Worker设置
+# 实验性功能
+service_worker:
+  enable: false # 是否启用Service Worker
+
+# Live2D看板娘设置
+# 实验性功能
+live2d:
+  enable: false # 是否启用Live2D看板娘
+  position: left # 位置，left 或 right
+
+# Live2D Widgets设置
+# 实验性功能
+live2d_widgets:
+  enable: false # 是否启用Live2D Widgets
+  position: left # 位置，left 或 right
+
+# 音乐播放器设置
+# 实验性功能
+# 请开启pjax以使用此功能
+player:
+  position: before_sidebar # 播放器位置 before_sidebar / after_sidebar / after_widget
+  # 如果您启用Meting，必须先启用APlayer
+  aplayer:
+    # https://github.com/DIYgod/APlayer
+    enable: true # 是否启用APlayer音乐播放器
+    options: # APlayer选项
+      audio: [] # 音频列表
+      fixed: false # 是否固定位置
+      autoplay: false # 是否自动播放
+      loop: 'all' # 循环模式
+      order: 'list' # 播放顺序
+      preload: 'auto' # 预加载设置
+      volume: 0.7 # 音量
+      mutex: true # 是否互斥
+      listFolded: false # 列表是否折叠
+      lrcType: 0 # 歌词类型
+  meting:
+    # https://github.com/metowolf/MetingJS
+    # 如果您想使用Meting，请先启用APlayer
+    enable: false # 是否启用Meting
+    meting_api: # 自定义API
+    options: # Meting选项
+      id: 2265921590 # ID
+      server: netease # 服务器
+      type: playlist # 类型
+      auto: # 自动播放
+
+########################################
+# pangu.js设置（中文排版优化）
+########################################
+
+pangu:
+  # 更多信息: https://github.com/vinta/pangu.js
+  enable: false # 启用pangu.js在中英文之间添加空格
+
+########################################
+# 主题颜色设置
+########################################
+
+# experimental, may have a lot of bugs, open with caution!
+# 基于Google的Material You设计指南的动态颜色生成工具，能够从任何图像中提取主色并生成完整的浅色和深色配色方案。
+material_theme:
+  # 更多信息: https://github.com/2061360308/material-theme
+  # 注意: 当您启用此功能时，所有封面将自动添加"crossorigin"属性以支持动态配色方案
+  # 因此请确保您的自定义封面不会被浏览器的CORS策略阻止
+  enable: false # 启用material_theme以根据横幅图片生成动态配色方案
+
+# 内部主题颜色设置
+internal_theme:
+  # 浅色主题颜色
+  light:
+    --red-0: "#ff0000"
+    --red-1: "#ff5252"
+    --red-2: "#ff7c7c"
+    --red-3: "#ffafaf"
+    --red-4: "#ffd0d0"
+    --red-5: "#ffecec"
+    --red-5-5: "#fff3f3"
+    --red-6: "#fff7f7"
+    --color-red-6-shadow: "rgba(255, 78, 78, 0.6)"
+    --color-red-3-shadow: "rgba(255, 78, 78, 0.3)"
+
+    --highlight-nav: "#e6e6e6"
+    --highlight-scrollbar: "#d6d6d6"
+    --highlight-background: "#f7f7f7"
+    --highlight-current-line: "#dadada"
+    --highlight-selection: "#e9e9e9"
+    --highlight-foreground: "#4d4d4d"
+    --highlight-comment: "#7d7d7d"
+    --highlight-red: "#c8362b"
+    --highlight-orange: "#b66014"
+    --highlight-yellow: "#cb911d"
+    --highlight-green: "#2ea52e"
+    --highlight-aqua: "#479d9d"
+    --highlight-blue: "#1973b8"
+    --highlight-purple: "#7135ac"
+  # 深色主题颜色
+  dark:
+    --red-4: "rgba(255, 208, 208, 0.5)"
+    --red-5: "rgba(255,228,228,0.15)"
+    --red-5-5: "rgba(255,236,236,0.05)"
+    --red-6: "rgba(255, 243, 243, 0.2)"
+
+    --highlight-nav: "#2e353f"
+    --highlight-scrollbar: "#454d59"
+    --highlight-background: "#22272e"
+    --highlight-current-line: "#393939"
+    --highlight-selection: "#515151"
+    --highlight-foreground: "#cccccc"
+    --highlight-comment: "#999999"
+    --highlight-red: "#f47067"
+    --highlight-orange: "#f69d50"
+    --highlight-yellow: "#ffcc66"
+    --highlight-green: "#99cc99"
+    --highlight-aqua: "#66cccc"
+    --highlight-blue: "#54b6ff"
+    --highlight-purple: "#dcbdfb"
+
+########################################
+# CDN资源设置
+########################################
+
+# 依赖的CDN链接
+# 如果您更改了js库的版本，请确保修改相应的完整性值
+vendor:
+  cdn_jsdelivr_gh: https://cdn.jsdelivr.net/gh/
+  cdn_jsdelivr_npm: https://cdn.jsdelivr.net/npm/
+  fastly_jsdelivr_gh: https://fastly.jsdelivr.net/gh/
+  fastly_jsdelivr_npm: https://fastly.jsdelivr.net/npm/
+  unpkg: https://unpkg.com/
+  webcache: https://npm.webcache.cn/
+  # JavaScript库设置
+  js:
+    clipboard: # 剪贴板库
+      src: webcache|clipboard@2.0.11/dist/clipboard.min.js
+      integrity: sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q
+    lazysizes: # 图片懒加载库
+      src: webcache|lazysizes@5.3.2/lazysizes.min.js
+      integrity: sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf+e
+    photoswipe: # 图片灯箱库
+      src: webcache|photoswipe@5.4.4/dist/photoswipe.esm.min.js
+      integrity: sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s
+    photoswipe_lightbox: # 图片灯箱库
+      src: webcache|photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js
+      integrity: sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/
+    valine: # Valine评论系统
+      src: webcache|valine@1.5.1/dist/Valine.min.js
+      integrity: sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE+s5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn
+    waline: # Waline评论系统
+      src: webcache|@waline/client@2.15.8/dist/waline.mjs
+      integrity: sha384-9sbqJjrfGjbkI6/PI4nU/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH/KinBEAZII/5
+    twikoo: # Twikoo评论系统
+      src: webcache|twikoo@1.6.44/dist/twikoo.all.min.js
+      integrity: sha384-kwWLC0HjeZZnVPqCJ1AncI8tsk+kQqF9TbAmCclcc9Z0hGkfgHRzeQZxmdmZhE0K
+    gitalk: # Gitalk评论系统
+      src: webcache|gitalk@1.8.0/dist/gitalk.min.js
+      integrity: sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU/lcEH5O8eVbSDhbPwsiVUTp/aGX/z/5EuMA
+    busuanzi: # 不蒜子统计
+      src: webcache|busuanzi@2.3.0/bsz.pure.mini.js
+      integrity: sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S
+    algolia: # Algolia搜索
+      src: webcache|algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js
+      integrity: sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S+jQz7ZBtQXnsXmD+9jDOOY4cL6dCPzlrk
+    instantsearch: # Algolia即时搜索
+      src: webcache|@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js
+      integrity: sha384-aagKMe8nkqaP2DYQc8kkYOL5l+M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK
+    pace: # 页面加载进度条
+      src: webcache|pace-js@1.2.4/pace.min.js
+      integrity: sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8
+    mermaid: # Mermaid图表
+      src: webcache|mermaid@11.10.1/dist/mermaid.min.js
+      integrity: sha384-7nxfNsXzOEcSwk+tzfq6tbjmfg0P2Gqmi7JTnRjv9Ll3gFWNro6lI7hPtZPM5ZLD
+    firework: # 鼠标烟花效果
+      src: webcache|mouse-firework@0.1.1/dist/index.umd.js
+      integrity: sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d
+    pjax: # PJAX无刷新加载
+      src: webcache|theme-shokax-pjax@0.0.3/dist/index.umd.js
+      integrity: sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE/jMSCxD+jAPU55x/jj3wlf
+    live2d: # Live2D看板娘
+      base: fastly_jsdelivr_gh|D-Sketon/plugin-live2d/
+      js: fastly_jsdelivr_gh|D-Sketon/plugin-live2d/js/live2d-autoload.js
+    live2d_widgets: # Live2D Widgets
+      src: webcache|live2d-widgets@0.9.0/autoload.js
+      integrity: sha384-poTN7wN/SqNhQqo3jdFeX20ikddWeFGkUkDEzsKjgH/ez8aQLn81oI0Cw6q5xNyB
+    md5: # MD5加密
+      src: webcache|blueimp-md5@2.19.0/js/md5.min.js
+      integrity: sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr/gZlbkHkL6vTthxH
+    quicklink: # Quicklink预加载
+      src: webcache|quicklink@2.3.0/dist/quicklink.umd.js
+      integrity: sha384-aD7FsuQkS1ohgFKY41fJfeA+Wd/QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS
+    katex: # KaTeX数学公式渲染
+      src: webcache|katex@0.16.22/dist/katex.min.js
+      integrity: sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6
+    katex_auto_render: # KaTeX自动渲染
+      src: webcache|katex@0.16.22/dist/contrib/auto-render.min.js
+      integrity: sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh
+    mathjax: # MathJax数学公式渲染
+      src: webcache|mathjax@3.2.2/es5/tex-mml-chtml.js
+      integrity: sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei
+    aplayer: # APlayer音乐播放器
+      src: webcache|aplayer@1.10.1/dist/APlayer.min.js
+      integrity: sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL/aORyw+5+HZoU6e
+    meting: # Meting音乐播放器
+      src: webcache|meting@2.0.1/dist/Meting.min.js
+      integrity: sha384-ASVlpKF80A22OXTK3tfEjZm1EL6uFMKIC4p8+0maanw1S/IyB+Y4JG+ZDU7GpKE8
+    qrcode: # 二维码生成
+      src: webcache|qrcode@1.5.1/build/qrcode.js
+      integrity: sha384-VT1EeewTCEXgndcPMQ0PzV+uVFYjxFIjmAA7s5gcMX9t4Dt5TD+OVQIn7NJWIXn7
+    dompurify: # HTML净化
+      src: webcache|dompurify@3.2.6/dist/purify.min.js
+      integrity: sha384-JEyTNhjM6R1ElGoJns4U2Ln4ofPcqzSsynQkmEc/KGy6336qAZl70tDLufbkla+3
+    pangu: # 中英文排版优化
+      src: webcache|pangu@4.0.7/dist/browser/pangu.min.js
+      integrity: sha384-HeUHqi0nVsPUm/E0ss7OfnIV/yD96JWB8ehZvUuoVax9DpNHL17jj9pdfXHzqDxm
+    material_theme: # Material主题
+      src: webcache|material-theme@1.0.0/dist/material-theme.umd.js
+      integrity: sha384-vLev0II0HKFaxkcm+/7kX5IGwVFBASkGchU311wmU/veIj2bB0UcBkQbW6yw2asK
+    snapdom: # Snapdom
+      src: webcache|@zumer/snapdom@1.9.9/dist/snapdom.min.js
+      integrity: sha384-taz9Bq0wPqLsuiB4ix4blTozt/y84cjbMX5ZWkfPPjpVBme8M/jWopanNBcdH/qp
+  # CSS库设置
+  css:
+    photoswipe: # 图片灯箱CSS
+      src: webcache|photoswipe@5.4.4/dist/photoswipe.css
+      integrity: sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx/1oA/0l8ysE
+    katex: # KaTeX数学公式CSS
+      src: webcache|katex@0.16.22/dist/katex.min.css
+      integrity: sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP
+    waline: # Waline评论系统CSS
+      src: webcache|@waline/client@2.15.8/dist/waline.css
+      integrity: sha384-vltfZtesCdl6NYVcFVcjEaIi5RpNvZe9t7fXvq8twVtcoy+Ub9QgnxUYJmwOhYCK
+    gitalk: # Gitalk评论系统CSS
+      src: webcache|gitalk@1.8.0/dist/gitalk.css
+      integrity: sha384-X7z7PUv2B67D8sPJyzDyGZSco1ADwmdI7ed4eCGtTKkClfyDFpPL9WgAn9XVr/Io
+    fontawesome: # Font Awesome图标字体
+      high_priority: # 高优先级CSS
+        - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/regular.min.css
+          integrity: sha384-PmxfVzUpFiyj5ZqzN3upnv7G4x9YAlMQar/qCBLEYSaWr/DUQ9f/8ITCT0aN7byC
+        - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/solid.min.css
+          integrity: sha384-HMy1VqP4zke4zzaS+hmFgbW3QXDYD+qtueW3unq30MTgdOnarIgANSya8s5qKRh5
+      low_priority: # 低优先级CSS
+        - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/brands.min.css
+          integrity: sha384-IzIkDWjFFaoFz413tu2x9R4cMiJ3EGuxOf/7Q8X0LFhqz9fU5zT2go7BgenYdKgN
+        - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/v5-font-face.min.css
+          integrity: sha384-691KBFHHuy2pnDTyR36VZ90jy7dXWBfC5D1nzy5rkDlqQQ/vRs/nmmK++LBfAp/C
+        - src: webcache|@fortawesome/fontawesome-free@7.0.0/css/v4-font-face.min.css
+          integrity: sha384-7c0mz5ReY2wCEDKNNEdrKdbtS/6+5dEgNsz/dU3e9m7xldAdTFwNTAuX+s4sJHJl
+    aos: # 页面动画CSS
+      src: webcache|@reimujs/aos@0.1.2/dist/aos.css
+      integrity: sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa
+    aplayer: # APlayer音乐播放器CSS
+      src: webcache|aplayer@1.10.1/dist/APlayer.min.css
+      integrity: sha384-tLMkTWh2pfXNWGFlUS0w1TFtRG5xZ9lPWFOooj+vDDLIL+xBGQU/voDBY5XE2lVh

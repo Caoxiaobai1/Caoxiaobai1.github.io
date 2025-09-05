@@ -1,0 +1,1352 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  
+    
+      data-theme-mode="auto"
+    
+  >
+  <head>
+  
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_4k4bc36ef96';window.REIMU_CONFIG.clipboard_tips = {"success":{"en":"Copy successfully (*^▽^*)","zh-CN":"复制成功 (*^▽^*)","zh-TW":"複製成功 (*^▽^*)","ja":"コピー成功 (*^▽^*)","pt-BR":"Copiado com sucesso (*^▽^*)"},"fail":{"en":"Copy failed (ﾟ⊿ﾟ)ﾂ","zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ","zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ","ja":"コピー失敗 (ﾟ⊿ﾟ)ﾂ","pt-BR":"Falha ao copiar (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';window.REIMU_CONFIG.i18n_languages = ["en"];</script>
+  
+  <title>
+    资料分析 |
+    
+    Hexo
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link rel="preload" as="style" href="https://fontsapi.zeoseven.com/292/main/result.css" onload="this.rel&#x3D;&#39;stylesheet&#39;" crossorigin>
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="第一章　实用速算技巧  1.1　加法技巧–尾数法、高位叠加法 1.1.1　尾数法 在多个数字精确求和或求差时，从“尾数”处入手，为保证精确与速度，一般可观察两位。  【例1】 求出2014～2017年全国残疾人康复机构数量之和： A．29576               B．30217 C．33418               D．36439 【例2】（2019年安徽特岗） 2011年，商标">
+<meta property="og:type" content="article">
+<meta property="og:title" content="资料分析">
+<meta property="og:url" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="第一章　实用速算技巧  1.1　加法技巧–尾数法、高位叠加法 1.1.1　尾数法 在多个数字精确求和或求差时，从“尾数”处入手，为保证精确与速度，一般可观察两位。  【例1】 求出2014～2017年全国残疾人康复机构数量之和： A．29576               B．30217 C．33418               D．36439 【例2】（2019年安徽特岗） 2011年，商标">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905104917650.png">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905112551987.png">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905112642137.png">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905140708548.png">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905140812804.png">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905140834424.png">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/clip_image002.gif">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905143626366.png">
+<meta property="og:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905143639900.png">
+<meta property="article:published_time" content="2025-09-05T02:45:00.000Z">
+<meta property="article:modified_time" content="2025-09-05T06:41:41.165Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="资料">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/image-20250905104917650.png">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL&#x2F;toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx&#x2F;1oA&#x2F;0l8ysE" crossorigin="anonymous">
+  
+    
+      
+        
+<link rel="stylesheet" href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l&#x2F;9On385z&#x2F;&#x2F;&#x2F;+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+
+      
+    
+  
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css" integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous">
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.css" integrity="sha384-tLMkTWh2pfXNWGFlUS0w1TFtRG5xZ9lPWFOooj+vDDLIL+xBGQU&#x2F;voDBY5XE2lVh" crossorigin="anonymous">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      
+      
+        
+      
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="heatmap-tooltip"></div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+             
+              &#xe62b;
+             
+          </div>
+          <a class="main-nav-link" href="/">首页</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+             
+              &#xe62b;
+             
+          </div>
+          <a class="main-nav-link" href="/archives">归档</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+             
+              &#xe62b;
+             
+          </div>
+          <a class="main-nav-link" href="/about">关于</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+             
+              &#xe62b;
+             
+          </div>
+          <a class="main-nav-link" href="/friend">友链</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
+    
+  </nav>
+  
+    
+    <nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">简体中文</span>
+        </div>
+        <ul class="select-items" id="select-items">
+          
+            <li data-value="zh-CN" class="selected">简体中文</li>
+          
+            <li data-value="en" >English</li>
+          
+        </ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};
+            
+              langMap['zh-CN'] = '/2025/09/05/资料分析/';
+            
+              langMap['en'] = '/en/2025/09/05/资料分析/';
+            
+            selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav>
+  
+</div>
+<header id="header">
+  
+    
+      
+        <picture>
+          
+        </picture>
+        
+          <img  fetchpriority="high" src="/images/banner.webp" alt="资料分析">
+        
+      
+    
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">资料分析</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
+  
+  <div class="sidebar-wrapper-container sticky">
+  
+    
+      <div id="aplayer" theme="var(--color-link)" data-aos="fade-up"></div>
+    
+    
+  
+ 
+  <div class="sidebar-wrapper">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        
+          <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+  
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%AE%9E%E7%94%A8%E9%80%9F%E7%AE%97%E6%8A%80%E5%B7%A7"><span class="toc-number">1.</span> <span class="toc-text"> 第一章　实用速算技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E5%8A%A0%E6%B3%95%E6%8A%80%E5%B7%A7%E5%B0%BE%E6%95%B0%E6%B3%95-%E9%AB%98%E4%BD%8D%E5%8F%A0%E5%8A%A0%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text"> 1.1　加法技巧–尾数法、高位叠加法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E5%87%8F%E6%B3%95%E6%8A%80%E5%B7%A7%E5%88%86%E6%AE%B5%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text"> 1.2　减法技巧–分段法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-%E4%B9%98%E6%B3%95%E6%8A%80%E5%B7%A7%E5%B0%8F%E5%88%86%E4%BA%92%E6%8D%A2%E6%B3%95-%E6%8B%86%E5%88%86%E6%B3%95-%E6%94%BE%E7%BC%A9%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text"> 1.3　乘法技巧–小分互换法、拆分法、放缩法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-%E9%99%A4%E6%B3%95%E6%8A%80%E5%B7%A7%E6%8B%86%E5%88%86%E6%B3%95-%E6%94%BE%E7%BC%A9%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text"> 1.4　除法技巧–拆分法、放缩法</span></a></li></ol></li></ol>
+  
+</div>
+</div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="John Doe" class="lazyload">
+  <div class="sidebar-author-name">John Doe</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">12</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-steam sidebar-social-icon">
+      <a href=https://steamcommunity.com/id/yourname itemprop="url" target="_blank" aria-label="steam" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+        
+      
+      
+        
+          <div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div>
+        
+      
+    </div>
+  </div>
+  
+  <div class="sidebar-widget">
+  
+  </div>
+  
+  </div>
+  
+</aside>
+
+          <section id="main"><article id="post-资料分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <span class="article-date-link icon-calendar" data-aos="zoom-in">
+    <time datetime="2025-09-05T02:45:00.000Z" itemprop="datePublished">2025-09-05</time>
+    <time style="display: none;" id="post-update-time">2025-09-05</time>
+  </span>
+  
+    <span class="article-date-link icon-calendar-plus" data-aos="zoom-in">
+      <time datetime="2025-09-05T06:41:41.165Z" itemprop="dateModified">2025-09-05</time>
+    </span>
+  
+</div>
+
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%85%AC%E8%80%83/" data-aos="zoom-in">公考</a>
+  </div>
+
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <h1 id="第一章-实用速算技巧"><a class="markdownIt-Anchor" href="#第一章-实用速算技巧"></a> 第一章　实用速算技巧</h1>
+<h2 id="11-加法技巧尾数法-高位叠加法"><a class="markdownIt-Anchor" href="#11-加法技巧尾数法-高位叠加法"></a> 1.1　加法技巧–尾数法、高位叠加法</h2>
+<p><strong>1.1.1</strong>　<strong>尾数法</strong></p>
+<p>在多个数字精确求和或求差时，从“尾数”处入手，为保证精确与速度，一般可观察两位。</p>
+<p><img src="image-20250905104917650.png" alt="image-20250905104917650" /></p>
+<p><strong>【例1】</strong></p>
+<p>求出2014～2017年全国残疾人康复机构数量之和：</p>
+<p>A．29576               B．30217</p>
+<p>C．33418               D．36439</p>
+<p><strong>【例2】（2019年安徽特岗）</strong></p>
+<p>2011年，商标局共受理商标注册申请1416785件，同比增长32.1%，再创历史新高，连续十年位居世界第一。其中商标注册网上申请达804926件。</p>
+<p>外国来华申请量（包括马德里商标国际注册领土延伸申请）排名前10位的国家或地区分别是美国、日本、韩国、英国、德国、英属维尔京群岛、法国、意大利、瑞士、澳大利亚，申请量分别为26060件、19715件、6318件、5588件、3796件、3461件、3243件、2865件、2124件、2085件，这10个国家或地区的申请量之和占外国在华申请总数的78.5%。</p>
+<p>问题：2011年，外国来华商标申请量排名前10位的国家或地区的申请量之和为：</p>
+<p>A．75255件              B．75525件</p>
+<p>C．76215件              D．79585件</p>
+<p><strong>1.1.2</strong>　<strong>高位叠加</strong></p>
+<p>和我们记忆中的列竖式做加法顺序正相反，高位叠加是从高位加起，抓住问题的主要矛盾。非精确求和或没有选项可以参考时，可以选用高位叠加法。</p>
+<p><img src="image-20250905112551987.png" alt="image-20250905112551987" /></p>
+<p><strong>图　2014～2021年全国零售药店终端药品销售额和同比增速</strong></p>
+<p><strong>【例1】</strong></p>
+<p>求出十三五时期全国零售药店终端药品销售额：</p>
+<p><strong>【例2】（2025年湖北选调）</strong></p>
+<p><img src="image-20250905112642137.png" alt="image-20250905112642137" /></p>
+<p><strong>图　2023年11月～2024年11月证券期货经营机构资管产品月度备案数量及规模趋势</strong></p>
+<p>问题：2024年上半年，证券期货经营机构共备案私募资管产品:</p>
+<p>A．不到4400支            	  B．4400～4500支之间</p>
+<p>C．4500～4600支之间          D．超过4600支</p>
+<h2 id="12-减法技巧分段法"><a class="markdownIt-Anchor" href="#12-减法技巧分段法"></a> 1.2　减法技巧–分段法</h2>
+<p>将多位数（三位、四位）的减法分成两段，尽可能保证不用借位；若无法保证不借位，可以用负数代替借位。</p>
+<p><strong>【例题】</strong></p>
+<p>512－481          532－328                721－688</p>
+<p>745－372          938－776                822－484</p>
+<p>1723－494         245－177                622－478</p>
+<p><strong>【例1】（2023年国考）</strong></p>
+<p><strong>表　2021年2～12月各月末固定互联网宽带接入用户数</strong></p>
+<table>
+<thead>
+<tr>
+<th>万户</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>接入用户</td>
+<td>其中：  xDSL用户</td>
+<td>光纤用户</td>
+<td>其中：  100Mbps速率以上用户</td>
+<td></td>
+</tr>
+<tr>
+<td>2月</td>
+<td>49222</td>
+<td>296</td>
+<td>46274</td>
+<td>44516</td>
+</tr>
+<tr>
+<td>3月</td>
+<td>49726</td>
+<td>295</td>
+<td>46707</td>
+<td>45072</td>
+</tr>
+<tr>
+<td>4月</td>
+<td>50061</td>
+<td>293</td>
+<td>47053</td>
+<td>45517</td>
+</tr>
+<tr>
+<td>5月</td>
+<td>50516</td>
+<td>292</td>
+<td>47515</td>
+<td>46104</td>
+</tr>
+<tr>
+<td>6月</td>
+<td>50961</td>
+<td>290</td>
+<td>47968</td>
+<td>46649</td>
+</tr>
+<tr>
+<td>7月</td>
+<td>51374</td>
+<td>290</td>
+<td>48416</td>
+<td>47173</td>
+</tr>
+<tr>
+<td>8月</td>
+<td>51865</td>
+<td>290</td>
+<td>48921</td>
+<td>47710</td>
+</tr>
+<tr>
+<td>9月</td>
+<td>52629</td>
+<td>291</td>
+<td>49643</td>
+<td>48450</td>
+</tr>
+<tr>
+<td>10月</td>
+<td>53146</td>
+<td>290</td>
+<td>50077</td>
+<td>49026</td>
+</tr>
+<tr>
+<td>11月</td>
+<td>53540</td>
+<td>288</td>
+<td>50466</td>
+<td>49557</td>
+</tr>
+<tr>
+<td>12月</td>
+<td>53579</td>
+<td>283</td>
+<td>50551</td>
+<td>49848</td>
+</tr>
+</tbody>
+</table>
+<p>问题：2021年下半年，我国固定互联网宽带接入用户中，光纤用户数增量超过500万户的月份有几个：</p>
+<p>A．2                 B．3</p>
+<p>C．4                 D．5</p>
+<p><strong>【例2】（2022年联考）</strong></p>
+<p><strong>表　2011～2020年全国城市生活垃圾无害化处理状况</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>总清运量  （万吨）</th>
+<th>无害化处理场  （座）</th>
+<th>无害化处理能力  （万吨/日）</th>
+<th>无害化处理量  （万吨）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2011年</td>
+<td>16395</td>
+<td>677</td>
+<td>40.91</td>
+<td>13090</td>
+</tr>
+<tr>
+<td>2012年</td>
+<td>17081</td>
+<td>701</td>
+<td>44.63</td>
+<td>14490</td>
+</tr>
+<tr>
+<td>2013年</td>
+<td>17239</td>
+<td>765</td>
+<td>49.23</td>
+<td>15394</td>
+</tr>
+<tr>
+<td>2014年</td>
+<td>17860</td>
+<td>818</td>
+<td>53.35</td>
+<td>16394</td>
+</tr>
+<tr>
+<td>2015年</td>
+<td>19142</td>
+<td>890</td>
+<td>57.69</td>
+<td>18013</td>
+</tr>
+<tr>
+<td>2016年</td>
+<td>20362</td>
+<td>940</td>
+<td>62.14</td>
+<td>19674</td>
+</tr>
+<tr>
+<td>2017年</td>
+<td>21521</td>
+<td>1013</td>
+<td>67.99</td>
+<td>21034</td>
+</tr>
+<tr>
+<td>2018年</td>
+<td>22802</td>
+<td>1091</td>
+<td>76.62</td>
+<td>22565</td>
+</tr>
+<tr>
+<td>2019年</td>
+<td>24206</td>
+<td>1183</td>
+<td>86.99</td>
+<td>24013</td>
+</tr>
+<tr>
+<td>2020年</td>
+<td>23512</td>
+<td>1287</td>
+<td>96.35</td>
+<td>23452</td>
+</tr>
+</tbody>
+</table>
+<p>问题：2012～2020年间，全国城市生活垃圾无害化处理量同比增长超过1200万吨的年份有几个：</p>
+<p>A．4                 B．5</p>
+<p>C．6                 D．7</p>
+<h2 id="13-乘法技巧小分互换法-拆分法-放缩法"><a class="markdownIt-Anchor" href="#13-乘法技巧小分互换法-拆分法-放缩法"></a> 1.3　乘法技巧–小分互换法、拆分法、放缩法</h2>
+<p><strong>1.3.1</strong>　<strong>小分互换</strong></p>
+<p>若乘法中有某个乘数可以近似的转化为某个常见分数，我们可以将多位数乘法转化为简单除法计算;</p>
+<p>一个数字乘以5、25、125，可转化为除2、4、8.</p>
+<p><strong>需记忆的常用小数如下：</strong></p>
+<p><img src="image-20250905140708548.png" alt="image-20250905140708548" /></p>
+<p><strong>【例题】</strong></p>
+<p>784×25%          632×12.5%                20%×455</p>
+<p>727×16.7%         981×33.3%                50%×472</p>
+<p><strong>1.3.2</strong>　<strong>乘法拆分</strong></p>
+<p>若乘法中有某个乘数为百分数且能拆成两个简单数值（50%、10%、5%等），我们可以将该百分数拆成两部分相乘，要擅用“1%”（“一个包子”）。</p>
+<p><strong>常用的小数拆分如下：</strong></p>
+<p>45%＝50%－5%	55%＝50%＋5% 	15%＝10%＋5%</p>
+<p>60%＝50%＋10% 	95%＝1－5% 	90%＝1－10%</p>
+<p>及所有50%、100%附近的数等。</p>
+<p><strong>【例题】</strong></p>
+<p>382×55%          492×48%                936×45%</p>
+<p>592×97%          1228×95%                766×103%</p>
+<p><strong>【例1】</strong></p>
+<p>62851×97.2%＝？</p>
+<p>A．60671               B．61091</p>
+<p>C．61692               D．62052</p>
+<p><strong>【例2】</strong></p>
+<p>42815×93.1%＝？</p>
+<p>A．41481               B．40819</p>
+<p>C．39861               D．39012</p>
+<p><strong>【例3】（2023年青海）</strong></p>
+<p><img src="image-20250905140812804.png" alt="image-20250905140812804" /></p>
+<p><strong>图1　中国母婴商品消费规模（单位：亿元）</strong></p>
+<p><img src="image-20250905140834424.png" alt="image-20250905140834424" /></p>
+<p>问题：2021年，我国消费最多的母婴商品金额约为：</p>
+<p>A．9638亿元              B．8994亿元</p>
+<p>C．7852亿元              D．4186亿元</p>
+<p><strong>1.3.3</strong>　<strong>乘法放缩</strong></p>
+<p>若乘法中有某个乘数可以拆分为整百×（1<img src="clip_image002.gif" alt="img" />）时，可使用乘法结果放缩简化运算。</p>
+<p><strong>【例题】</strong></p>
+<p>212×332          315×571           428×325</p>
+<p>782×617           865×408           568×330</p>
+<h2 id="14-除法技巧拆分法-放缩法"><a class="markdownIt-Anchor" href="#14-除法技巧拆分法-放缩法"></a> 1.4　除法技巧–拆分法、放缩法</h2>
+<p><strong>1.4.1</strong>　<strong>拆分法</strong></p>
+<p>拆分法是对直除的“优化”，可借助选项“猜”出答案，<strong>尤其适合分子位数小于等于分母的除法计算</strong>。</p>
+<p><strong>拆分法具体应用：</strong></p>
+<p>一、如果分子在分母的50%附近，先拆出50%；</p>
+<p>二、如果分数大小约等于1（分子分母相差不大），可先拆出100%；</p>
+<p>三、如果分子很小，可根据实际情况拆出10%或5%或1%；</p>
+<p><strong>【例1】50%左右</strong></p>
+<p>250÷484          333÷642                488÷912</p>
+<p>143÷247          200÷384                121÷292</p>
+<p><strong>【例2】100%左右</strong></p>
+<p>450÷484          633÷642                888÷912</p>
+<p>252÷247          360÷344                261÷292</p>
+<p><strong>【例3】1%-20%左右</strong></p>
+<p>50÷484          33÷642                88÷912</p>
+<p>36÷242          30÷384                41÷292</p>
+<p><strong>【例4】实战演练</strong></p>
+<p>47598÷89894＝？</p>
+<p>A．54.9%             B．56.5%</p>
+<p>C．52.9%             D．51.2%</p>
+<p>43256÷357951＝？</p>
+<p>A．8.5%              B．10.9%</p>
+<p>C．12.1%             D．13.6%</p>
+<p>32503÷33546＝？</p>
+<p>A．94.1%             B．95.5%</p>
+<p>C．96.9%             D．98.5%</p>
+<p><strong>1.4.2</strong>　<strong>除法放缩</strong></p>
+<p>除法放缩的原理：分子分母同时扩大或缩小相同的幅度，分式不变。</p>
+<p>除法放缩的适用范围：</p>
+<p>①分母接近整百；</p>
+<p>②多个数乘除中分子分母接近整数倍。</p>
+<p><strong>【例1】</strong></p>
+<p>$$\frac{858}{981}
+$$</p><p><img src="image-20250905143626366.png" alt="image-20250905143626366" /></p>
+<p><img src="image-20250905143639900.png" alt="image-20250905143639900" /></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E8%B5%84%E6%96%99/" rel="tag">资料</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+      
+      <div class="article-nav-link-wrap article-nav-link-left">
+        
+          
+          
+            <img data-src="https://d-sketon.top/img/_backwebp/bg1.webp" data-sizes="auto" alt="深夜随笔" class="lazyload">
+          
+        
+        <a href="/2025/09/05/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%94/"></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">
+          
+            深夜随笔
+          
+        </h3>
+      </div>
+    
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        <img data-src="/covers%5Cfll.jpg" data-sizes="auto" alt="测试文档1" class="lazyload">
+      
+      <a href="/2025/01/24/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A31/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          测试文档1
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+</section>
+        </div>
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      
+      
+      
+        2021-2025
+      
+      <span class="footer-info-sep rotate"></span>
+      John Doe
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        21.8k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        01:31
+      </div>
+    
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      
+        <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class" >
+  
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%AE%9E%E7%94%A8%E9%80%9F%E7%AE%97%E6%8A%80%E5%B7%A7"><span class="toc-number">1.</span> <span class="toc-text"> 第一章　实用速算技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E5%8A%A0%E6%B3%95%E6%8A%80%E5%B7%A7%E5%B0%BE%E6%95%B0%E6%B3%95-%E9%AB%98%E4%BD%8D%E5%8F%A0%E5%8A%A0%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text"> 1.1　加法技巧–尾数法、高位叠加法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E5%87%8F%E6%B3%95%E6%8A%80%E5%B7%A7%E5%88%86%E6%AE%B5%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text"> 1.2　减法技巧–分段法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-%E4%B9%98%E6%B3%95%E6%8A%80%E5%B7%A7%E5%B0%8F%E5%88%86%E4%BA%92%E6%8D%A2%E6%B3%95-%E6%8B%86%E5%88%86%E6%B3%95-%E6%94%BE%E7%BC%A9%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text"> 1.3　乘法技巧–小分互换法、拆分法、放缩法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-%E9%99%A4%E6%B3%95%E6%8A%80%E5%B7%A7%E6%8B%86%E5%88%86%E6%B3%95-%E6%94%BE%E7%BC%A9%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text"> 1.4　除法技巧–拆分法、放缩法</span></a></li></ol></li></ol>
+  
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="John Doe" class="lazyload">
+  <div class="sidebar-author-name">John Doe</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">12</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-steam sidebar-social-icon">
+      <a href=https://steamcommunity.com/id/yourname itemprop="url" target="_blank" aria-label="steam" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          
+            &#xe62b;
+          
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+</div>
+      
+    
+  </div>
+  
+    
+      <div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
+    
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js" integrity="sha384-8LyaidD9GPxQQgLJO&#x2F;WRw&#x2F;O2h3BoNq&#x2F;ApI&#x2F;ecpvM6RsrCz2qP2ppBXUKihP4V&#x2F;2d" crossorigin="anonymous"></script>
+
+  <script>
+    window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
+  </script>
+
+
+
+  
+<script src="https://npm.webcache.cn/theme-shokax-pjax@0.0.3/dist/index.umd.js" integrity="sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE&#x2F;jMSCxD+jAPU55x&#x2F;jj3wlf" crossorigin="anonymous"></script>
+
+  <script>
+    function loadScripts(scripts, index) {
+      if (index < scripts.length) {
+        const script = scripts[index];
+        const src = script.getAttribute('src');
+
+        const loadScript = (scriptContent) => {
+          return new Promise((resolve, reject) => {
+            const scriptElement = document.createElement('script');
+            if (script.type) {
+              scriptElement.type = script.type;
+            }
+            if (script.src) {
+              scriptElement.src = script.src;
+              if (script.integrity) {
+                scriptElement.integrity = script.integrity;
+              }
+              if (script.crossOrigin) {
+                scriptElement.crossOrigin = script.crossOrigin;
+              }
+              scriptElement.onload = resolve;
+              scriptElement.onerror = reject;
+            }
+            if (scriptContent) {
+              scriptElement.text = scriptContent;
+            }
+            document.head.appendChild(scriptElement);
+            if (!script.src) {
+              resolve();
+            }
+          })
+          
+        }
+
+        ;(src ? loadScript() : loadScript(script.text))
+          .then(() => loadScripts(scripts, index + 1))
+          .catch(error => {
+            console.error(`Failed to load script: ${src || 'inline script'}`, error);
+            loadScripts(scripts, index + 1);
+          });
+      }
+    }
+    if (window.Pjax) {
+      Pjax.prototype.getElements = function() {
+        const i18nLanguages = window.REIMU_CONFIG.i18n_languages;
+        const baseUrl = window.REIMU_CONFIG.base;
+        let basePathname = new URL(baseUrl).pathname;
+        if (!basePathname.endsWith('/')) {
+          basePathname += '/';  
+        }
+        const currentUrl = window.location.href;
+        const currentPathname = new URL(currentUrl).pathname.replace(basePathname, '');
+        const aLinks = document.querySelectorAll('a[href]');
+        const pjaxLinks = [];
+        for(let i = 0; i < aLinks.length; i++) {
+          const aLink = aLinks[i];
+          const aLinkHref = aLink.getAttribute('href');
+          const isExternal = aLink.getAttribute('target') === '_blank' || aLink.getAttribute('rel')?.includes('noopener');
+          if (isExternal || aLinkHref.startsWith('mailto:') || aLinkHref.startsWith('tel:') || aLinkHref.startsWith('javascript:') || aLinkHref.startsWith("data:") || aLinkHref.startsWith("vbscript:")) {
+            continue;
+          }
+          if (!i18nLanguages) {
+            // 多语言功能未打开
+            pjaxLinks.push(aLink);
+            continue;
+          }
+
+          const absoluteUrl = new URL(aLinkHref, currentUrl).href;
+          const absolutePathname = new URL(absoluteUrl).pathname.replace(basePathname, '');
+
+          if (!absolutePathname || !currentPathname) {
+            pjaxLinks.push(aLink);
+            continue;
+          }
+
+          const currentLangIndex = i18nLanguages.findIndex(lang => currentPathname.startsWith(lang));
+          if (currentLangIndex > -1) {
+            // 当前属于多语言站点
+            const absoluteLangIndex = i18nLanguages.findIndex(lang => absolutePathname.startsWith(lang));
+            if (absoluteLangIndex === currentLangIndex) {
+              // 同一语言站点，可以使用 pjax
+              pjaxLinks.push(aLink);
+            }
+          } else {
+            // 当前属于默认语言站点
+            const absoluteLangIndex = i18nLanguages.findIndex(lang => absolutePathname.startsWith(lang));
+            if (absoluteLangIndex === -1) {
+              // 同一语言站点，可以使用 pjax
+              pjaxLinks.push(aLink);
+            }
+          }
+        }
+        return pjaxLinks;
+      }
+    }
+    window.Pjax && new window.Pjax({
+      selectors: [
+        "#header>img",
+        "#header>picture",
+        "head title",
+        "#header-title",
+        "#subtitle-wrap",
+        "#main",
+        "#content",
+        ".sidebar-widget",
+        ".sidebar-wrapper",
+        ".sidebar-wrapper-container",
+        '#mobile-nav',
+        '#lazy-script',
+        '#i18n-nav'
+      ],
+      switches: {
+        ".sidebar-wrapper-container": function(oldEl, newEl) {
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
+        "#header-title": Pjax.switches.outerHTML,
+        "#subtitle-wrap": Pjax.switches.outerHTML,
+        "#main": function(oldEl, newEl) {
+          const scripts = [...newEl.querySelectorAll('script')];
+          loadScripts(scripts, 0);
+          oldEl.outerHTML = newEl.outerHTML
+          this.onSwitch()
+        },
+        "#mobile-nav": Pjax.switches.outerHTML,
+        '#lazy-script': function(oldEl, newEl) {
+          const scripts = [...newEl.querySelectorAll('script')];
+          loadScripts(scripts, 0);
+          oldEl.innerHTML = newEl.innerHTML
+          this.onSwitch()
+        },
+      },
+      cacheBust: false
+    })
+  </script>
+  
+<script src="/js/pjax.js"></script>
+
+
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js" integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA+Wd&#x2F;QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script>
+
+  <script data-pjax>
+    window.quicklink?.listen({
+      timeout: 3000,
+      priority: true,
+      ignores: []
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "John Doe",
+          title: "资料分析",
+          url: "http://example.com/2025/09/05/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/",
+          excerpt: "",
+          description: "",
+          stripContent: " 第一章 实用速算技巧  1.1 加法技巧–尾数法、高位叠加法 1.1.1 尾数法 在多个数字精确求和或求差时，从“尾数”处入手，为保证精确与速度，一般可观察两位。  【例1】 求出2014～2017年全国残疾人康复机构数量之和： A．29576               B．30217 C．33418               D．36439 【例2】（2019年安徽特岗） 2011年，商标局共受理商标注册申请1416785件，同比增长32.1%，再创历史新高，连续十年位居世界第一。其中商",
+          date: "Fri Sep 05 2025 10:45:00 GMT+0800",
+          updated: "Fri Sep 05 2025 14:41:41 GMT+0800",
+          cover: "/images/banner.webp",
+        };
+      </script>
+       
+    
+    
+      
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+        
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+        
+
+
+
+
+
+
+
+
+      
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.9.1' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.js" integrity="sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL&#x2F;aORyw+5+HZoU6e" crossorigin="anonymous"></script>
+
+  
+    <script>
+      var isMobile = window.matchMedia('(max-width: 959px)').matches;
+      if (isMobile) {
+      const aplayer = _$('#aplayer');
+        if (aplayer) {
+          const aside = aplayer.parentNode;
+          if (aside?.tagName === 'ASIDE') {
+            aplayer.removeAttribute('data-aos');
+            aside.removeChild(aplayer);
+            document.body.appendChild(aplayer);
+          }
+        }
+      }
+      const ap = new APlayer({
+        theme: "var(--color-link)",
+        container: document.getElementById('aplayer'),
+        audio: [] || [],
+        fixed: isMobile ? true : (false || false),
+        autoplay: false || false,
+        loop: 'all' || 'all',
+        order: 'list' || 'list',
+        preload: 'auto' || 'auto',
+        volume: 0.7 || 0.7,
+        mutex: true || true,
+        listFolded: false || false,
+        lrcType: 0 || 0,
+      });
+    </script>
+  
+
+
+
+
+
+    
+  </body>
+  </html>
+
