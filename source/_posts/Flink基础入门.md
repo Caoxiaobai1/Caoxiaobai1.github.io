@@ -1,8 +1,7 @@
 title: Flink基础入门
 date: 2022-11-28 20:30:20
 tags: [flink]
-categories: [大数据]
-sticky: 888
+categories: [编程]
 
 # Flink_Chapter01：安装部署及入门案例
 

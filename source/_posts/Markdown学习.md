@@ -2,8 +2,7 @@
 title: markdown学习
 date: 2022-11-28 20:30:20
 tags: [markdown]
-categories: [markdown]
-sticky: 777
+categories: [编程]
 ---
 
 ## Markdown笔记
