@@ -406,34 +406,6 @@
   </entry>
   
   <entry>
-    <title>markdown学习</title>
-    <link href="https://caoxiaobai1.github.io/2022/11/28/Markdown%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://caoxiaobai1.github.io/2022/11/28/Markdown%E5%AD%A6%E4%B9%A0/</id>
-    <published>2022-11-28T12:30:20.000Z</published>
-    <updated>2025-09-05T14:06:28.921Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="markdown笔记"><a class="markdownIt-Anchor" href="#markdown笔记"></a> Markdown笔记</h2><h1 id="1斜体和粗体"><a class="markdownIt-Anchor" href="#1斜体和粗体"></a> <strong>1.斜体和粗体</strong></h1><ol><li><code>*斜体*或_斜体_</code>    <em>斜体</em><br />. <code>**粗体**</code>   <strong>粗体</strong></li><li><code>***加粗斜体*** </code>  <em><strong>加粗斜体</strong></em><br />. <code>~~删除线~~ </code>  <s>删除线</s></li></ol><h1 id="2分级标题"><a class="markdownIt-Anchor" href="#2分级标题"></a> <strong>2.分级标题</strong></h1><ol><li><h1 id="一级标题-一级标题"><a class="markdownIt-Anchor" href="#一级标题-一级标题"></a> 一级标题<code># 一级标题</code></h1></li><li><h2 id="二级标题-二级标题"><a class="markdownIt-Anchor" href="#二级标题-二级标题"></a> 二级标题    <code>##二级标题</code></h2></li><li><h3 id="三级标题-三级标题"><a class="markdownIt-Anchor" href="#三级标题-三级标题"></a> 三级标题     <code>###三级标题 </code></h3></li><li><h4 id="四级标题-四级标题"><a class="markdownIt-Anchor" href="#四级标题-四级标题"></a> 四级标题    <code>####四级标题  </code></h4></li><li><h5 id="五级标题-五级标题"><a class="markdownIt-Anchor" href="#五级标题-五级标题"></a> 五级标题    <code>#####五级标题</code></h5></li><li><h6 id="六级标题-六级标题"><a class="markdownIt-Anchor" href="#六级标题-六级标题"></a> 六级标题     <code>######六级标题</code></h6></li></ol><h1 id="3超链接"><a class="markdownIt-Anchor" href="#3超链接"></a> <strong>3.超链接</strong></h1><p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。</p><h3 id="31-行内式"><a class="markdownIt-Anchor" href="#31-行内式"></a> 3.1. 行内式</h3><p>[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。链接文字’这样的形式。链接地址与链接标题前有一个空格。</p><p><code>欢迎来到[梵居闹市](http://blog.leanote.com/freewalk)</code></p><p>欢迎来到<a href="http://blog.leanote.com/freewalk">梵居闹市</a></p><p><code>欢迎来到[梵居闹市](http://blog.leanote.com/freewalk &quot;梵居闹市&quot;)</code></p><p>欢迎来到<a href="http://blog.leanote.com/freewalk" title="梵居闹市">梵居闹市</a></p><h3 id="32-参考式"><a class="markdownIt-Anchor" href="#32-参考式"></a> 3.2. 参考式</h3><p>参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。</p><p>语法说明：<br />参考式链接分为两部分，文中的写法<code> [链接文字][链接标记]</code>，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。</p><p>如果链接文字本身可以做为链接标记，你也可以写成<code>[链接文字][] </code><br />[链接文字]：链接地址的形式，见代码的最后一行。</p><p><code>我经常去的几个网站[Google][1]、[Leanote][2]以及[自己的博客][3] </code></p><p>我经常去的几个网站<a href="http://www.google.com" title="Google">Google</a>、<a href="http://www.leanote.com" title="Leanote">Leanote</a>以及<a href="http://http://blog.leanote.com/freewalk" title="梵居闹市">自己的博客</a></p><p><code>[Leanote 笔记][2]是一个不错的[网站][]。 </code></p><p><a href="http://www.leanote.com" title="Leanote">Leanote 笔记</a>是一个不错的<a href="http://http://blog.leanote.com/freewalk">网站</a>。</p><p>`</p><p>`</p><h3 id="33-自动链接"><a class="markdownIt-Anchor" href="#33-自动链接"></a> 3.3. 自动链接</h3><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p><p><code>&lt;http://example.com/&gt; &lt;address@example.com&gt; </code></p><p><a href="http://example.com/">http://example.com/</a></p><p><a href="mailto:address@example.com">address@example.com</a></p>]]></content>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;markdown笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#markdown笔记&quot;&gt;&lt;/a&gt; Markdown笔记&lt;/h2&gt;
-&lt;h1 id=&quot;1斜体和粗体&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="编程" scheme="https://caoxiaobai1.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="markdown" scheme="https://caoxiaobai1.github.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Flink基础入门</title>
     <link href="https://caoxiaobai1.github.io/2022/11/28/Flink%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/"/>
     <id>https://caoxiaobai1.github.io/2022/11/28/Flink%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</id>
@@ -460,6 +432,34 @@
     
     
     <category term="flink" scheme="https://caoxiaobai1.github.io/tags/flink/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown学习</title>
+    <link href="https://caoxiaobai1.github.io/2022/11/28/Markdown%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://caoxiaobai1.github.io/2022/11/28/Markdown%E5%AD%A6%E4%B9%A0/</id>
+    <published>2022-11-28T12:30:20.000Z</published>
+    <updated>2025-09-05T14:06:28.921Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="markdown笔记"><a class="markdownIt-Anchor" href="#markdown笔记"></a> Markdown笔记</h2><h1 id="1斜体和粗体"><a class="markdownIt-Anchor" href="#1斜体和粗体"></a> <strong>1.斜体和粗体</strong></h1><ol><li><code>*斜体*或_斜体_</code>    <em>斜体</em><br />. <code>**粗体**</code>   <strong>粗体</strong></li><li><code>***加粗斜体*** </code>  <em><strong>加粗斜体</strong></em><br />. <code>~~删除线~~ </code>  <s>删除线</s></li></ol><h1 id="2分级标题"><a class="markdownIt-Anchor" href="#2分级标题"></a> <strong>2.分级标题</strong></h1><ol><li><h1 id="一级标题-一级标题"><a class="markdownIt-Anchor" href="#一级标题-一级标题"></a> 一级标题<code># 一级标题</code></h1></li><li><h2 id="二级标题-二级标题"><a class="markdownIt-Anchor" href="#二级标题-二级标题"></a> 二级标题    <code>##二级标题</code></h2></li><li><h3 id="三级标题-三级标题"><a class="markdownIt-Anchor" href="#三级标题-三级标题"></a> 三级标题     <code>###三级标题 </code></h3></li><li><h4 id="四级标题-四级标题"><a class="markdownIt-Anchor" href="#四级标题-四级标题"></a> 四级标题    <code>####四级标题  </code></h4></li><li><h5 id="五级标题-五级标题"><a class="markdownIt-Anchor" href="#五级标题-五级标题"></a> 五级标题    <code>#####五级标题</code></h5></li><li><h6 id="六级标题-六级标题"><a class="markdownIt-Anchor" href="#六级标题-六级标题"></a> 六级标题     <code>######六级标题</code></h6></li></ol><h1 id="3超链接"><a class="markdownIt-Anchor" href="#3超链接"></a> <strong>3.超链接</strong></h1><p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。</p><h3 id="31-行内式"><a class="markdownIt-Anchor" href="#31-行内式"></a> 3.1. 行内式</h3><p>[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。链接文字’这样的形式。链接地址与链接标题前有一个空格。</p><p><code>欢迎来到[梵居闹市](http://blog.leanote.com/freewalk)</code></p><p>欢迎来到<a href="http://blog.leanote.com/freewalk">梵居闹市</a></p><p><code>欢迎来到[梵居闹市](http://blog.leanote.com/freewalk &quot;梵居闹市&quot;)</code></p><p>欢迎来到<a href="http://blog.leanote.com/freewalk" title="梵居闹市">梵居闹市</a></p><h3 id="32-参考式"><a class="markdownIt-Anchor" href="#32-参考式"></a> 3.2. 参考式</h3><p>参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。</p><p>语法说明：<br />参考式链接分为两部分，文中的写法<code> [链接文字][链接标记]</code>，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。</p><p>如果链接文字本身可以做为链接标记，你也可以写成<code>[链接文字][] </code><br />[链接文字]：链接地址的形式，见代码的最后一行。</p><p><code>我经常去的几个网站[Google][1]、[Leanote][2]以及[自己的博客][3] </code></p><p>我经常去的几个网站<a href="http://www.google.com" title="Google">Google</a>、<a href="http://www.leanote.com" title="Leanote">Leanote</a>以及<a href="http://http://blog.leanote.com/freewalk" title="梵居闹市">自己的博客</a></p><p><code>[Leanote 笔记][2]是一个不错的[网站][]。 </code></p><p><a href="http://www.leanote.com" title="Leanote">Leanote 笔记</a>是一个不错的<a href="http://http://blog.leanote.com/freewalk">网站</a>。</p><p>`</p><p>`</p><h3 id="33-自动链接"><a class="markdownIt-Anchor" href="#33-自动链接"></a> 3.3. 自动链接</h3><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p><p><code>&lt;http://example.com/&gt; &lt;address@example.com&gt; </code></p><p><a href="http://example.com/">http://example.com/</a></p><p><a href="mailto:address@example.com">address@example.com</a></p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;markdown笔记&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#markdown笔记&quot;&gt;&lt;/a&gt; Markdown笔记&lt;/h2&gt;
+&lt;h1 id=&quot;1斜体和粗体&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://caoxiaobai1.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="markdown" scheme="https://caoxiaobai1.github.io/tags/markdown/"/>
     
   </entry>
   
