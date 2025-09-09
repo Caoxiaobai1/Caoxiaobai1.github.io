@@ -119,7 +119,7 @@ footer:
     mask: true # 是否将图片用作遮罩
 
 # 侧边栏设置
-sidebar: right # 侧边栏位置，可以是 left 或 right
+sidebar: left # 侧边栏位置，可以是 left 或 right
 
 # 社交链接设置
 social:
