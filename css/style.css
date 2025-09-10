@@ -3121,7 +3121,7 @@ pre .javascript .function {
 .sidebar-toc-wrapper .toc-level-1 >a {
   width: 100%;
   display: inline-block;
-  text-align: center;
+  text-align: left;
 }
 .sidebar-toc-wrapper .toc-child {
   transform: scaleY(0);
@@ -3213,6 +3213,15 @@ pre .javascript .function {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+.sidebar-toggle {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: var(--red-3);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 .aplayer {
   margin: 0 0 40px !important;
