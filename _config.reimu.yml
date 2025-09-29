@@ -422,7 +422,7 @@ giscus:
 algolia_search:
   enable: false # 是否启用Algolia搜索
   hits:
-    per_page: 10 # 每页搜索结果数
+    per_page: 20 # 每页搜索结果数
 
 # 生成器搜索设置
 generator_search:
